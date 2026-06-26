@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Play Appel Web directly in your browser."
+  >
+  <meta name="theme-color" content="#071126">
+
+  <title>Appel Web</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#game">Skip to game</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="hero">
+        <p class="eyebrow">Browser Game</p>
+
+        <h1>Appel Web</h1>
+
+        <p class="hero-description">
+          Play Appel directly in your browser. Please note,
+          a keyboard is required.
+        </p>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="page-content">
+    <section id="game" class="game-section" aria-labelledby="game-heading">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Now Playing</p>
+          <h2 id="game-heading">Appel</h2>
+        </div>
+
+        <div class="section-actions">
+          <div class="button-row">
+            <button id="fullscreen-button" class="primary-button" type="button" aria-pressed="false">
+              <span aria-hidden="true">⛶</span>
+              <span>Enter fullscreen</span>
+            </button>
+
+            <button id="stop-button" class="secondary-button" type="button">
+              <span aria-hidden="true">↻</span>
+              <span>Stop / Refresh</span>
+            </button>
+
+            <a
+              class="secondary-button" href="appel web.html" target="_blank" rel="noopener noreferrer">
+              <span aria-hidden="true">↗</span>
+              Open game in new tab
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="game-container" class="game-container">
+        <div id="loading-screen" class="loading-screen">
+          <div class="spinner" aria-hidden="true"></div>
+          <p>Loading Appel Web...</p>
+        </div>
+
+        <iframe
+          id="game-frame" src="appel web.html" title="Appel Web game" allow="fullscreen" allowfullscreen loading="eager">
+        </iframe>
+      </div>
+    </section>
+
+    <section class="info-grid" aria-label="Game information">
+      <article class="info-card">
+        <h2>How to play</h2>
+        <ul>
+          <li>Arrow Keys or WASD to run, jump & crouch</li><br>
+          <li>Wall Jump - by touching a wall and pressing 'up'</li><br>
+          <li>Jump Higher - by holding up for longer</li><br>
+          <li>Stick to the ceiling - by holding up - But be careful, you can't move sideways when 'stuck' to a surface</li><br>
+          <li>Crouch by holding down (you can crouch on the floor, but also the walls and ceiling!)</li><br>
+          <li>Q + R - to quickly restart the level</li><br>
+          <li>Complete a level, then click 'replay' and then pause for an option to save your replay (load them back in the Play / Load option)</li>
+        </ul>
+      </article>
+
+      <article class="info-card">
+        <h2>Credits</h2>
+        <p>
+          THIS IS NOT THE ORIGINAL GAME.<br>
+          ------------------------------<br>
+          The orginal game was made by @griffpatch on Scratch.<br>
+          To visit the original game, click <a href="https://scratch.mit.edu/projects/60917032/" target="_blank" rel="noopener noreferrer">here</a>.<br>
+          To visit Scratch, click <a href="https://scratch.mit.edu/" target="_blank" rel="noopener noreferrer">here</a>.<br>
+          To view @griffpatch's profile, click <a href="https://scratch.mit.edu/users/griffpatch/" target="_blank" rel="noopener noreferrer">here</a>.<br>
+          -------------------------------<br>
+          The 'Appel' Charater was made by @legobouwer9 on Scratch.<br>
+          To view @legobouwer9's profile, click <a href="https://scratch.mit.edu/users/legobouwer9/" target="_blank" rel="noopener noreferrer">here</a>.<br>
+          -------------------------------<br>
+          The music in the game was sourced from <a href="https://www.youtube.com/channel/UCsLlqLIE-TqDq3lh5kU2PeA" target="_blank" rel="noopener noreferrer">this channel</a> on YouTube.<br>
+          --------------------------------<br>
+          The sound effects in the game were sourced from <a href="https://freesound.org/" target="_blank" rel="noopener noreferrer">Freesound</a>.<br>
+          --------------------------------<br>
+          The website version of the game was made by me.<br>
+          --------------------------------<br>
+          The game embedded in this website was packaged using the <a href="https://packager.turbowarp.org/" target="_blank" rel="noopener noreferrer">Turbowarp Packager</a>.<br>
+        </p>
+      </article>
+
+    </section>
+  </main>
+
+  <noscript>
+    <div class="noscript-message">
+      JavaScript is required for the fullscreen button and loading status.
+      The embedded game may still work without it.
+    </div>
+  </noscript>
+
+  <script src="script.js"></script>
+</body>
+</html>
+```
